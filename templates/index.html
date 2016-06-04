@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+  <META HTTP-EQUIV="expires" CONTENT="0">
+  <link rel="stylesheet" href="static/bower_components/bootstrap-css-only/css/bootstrap.css"/>
+  <title>Krig</title>
+</head>
+{% raw %}
+<body ng-app="ngYU" ng-controller="mainCtrl">
+  <button type="button" class="btn btn-primary" ng-click='getResult()'>TEST</button>
+
+  <!-- <img ng-src="{{ img_src }}"></img> -->
+
+  <!-- <div ng-bind="img_src"> -->
+
+  <!-- </div> -->
+  <!-- <ng-bind-html  ng-bind-html="img_src">
+
+  </ng-bind-html> -->
+
+  <div ng-bind-html="trustDangerousSnippet()">
+
+  </div>
+</body>
+  <script src="static/bower_components/angular/angular.js"></script>
+  <script src="static/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="static/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="static/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="static/scripts/app.js"></script>
+  <script src="static/scripts/mainCtrl.js"></script>
+  <script src="static/scripts/mainFac.js"></script>
+</html>
+{% endraw %}
